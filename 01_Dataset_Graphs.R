@@ -13,7 +13,7 @@ ggplot(df) +
 
 View(mpg)
 
-ggplot(mpg) +
-  geom_point(aes(displ, hwy, color = class))
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y =  hwy, color = class)
 
 
