@@ -9,3 +9,11 @@ df <- tibble(
 ggplot(df) +
   geom_histogram(aes(x), fill = "blue", binwidth = 0.1) +
   geom_histogram(aes(y), fill = "red", binwidth = 0.1)
+
+
+View(mpg)
+
+ggplot(mpg) +
+  geom_point(aes(displ, hwy, color = class))
+
+
